@@ -1,4 +1,5 @@
-# pet-steam
+- Черновой вариант феика дотабафа. На этом конец.
+- Помните про лимит запросов к api opendota(https://www.opendota.com/api-keys)
 
 ## Project setup
 ```
