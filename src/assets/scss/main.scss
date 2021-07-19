@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+	--body-bg: #f2f2f3;
+	--color-brand: #f64a35;
+	--color-brand-secondary: #fff5f4;
+	--color-base-alpha: #4b4f56;
+	--color-base-beta: #1b1b27;
+	--color-base-gamma: #888891;
+	--color-base-delta: #6d6d75;
+	--color-base-epsilon: #d5d5da;
+	--color-base-zeta: #5a5f67;
+	--color-border: #e9e9ec;
+	--color-hover: #fbfbfc;
+	--color-hover-secondary: #f8f8f9;
+	--selection-bg: rgba(246,74,53,0.4392156862745098);
+	--btn-primary-bg: var(--color-brand);
+	--btn-primary-bg-hover: #fb5e4b;
+	--btn-info-bg: #477fd2;
+	--btn-info-bg-hover: #3e72c0;
+	--btn-secondary-bg: #a0a0a9;
+	--btn-secondary-bg-hover: #b8b8c1;
+	--btn-tertiary-bg: #fbfbfc;
+	--btn-tertiary-bg-hover: #f8f8f9;
+	--btn-tertiary-color: var(--color-base-gamma);
+	--btn-tertiary-color-hover: var(--color-base-gamma);
+	--btn-quaternary-bg: #fff;
+	--btn-quaternary-bg-hover: #f8f8f9;
+	--btn-quaternary-color: var(--color-base-gamma);
+	--btn-quaternary-color-hover: var(--color-base-gamma);
+	--btn-disabled-bg: #b8b8c1;
+	--btn-flush-filters-bg: #a0a0a9;
+	--btn-flush-filters-bg-hover: #5a5f67;
+}
+
+body {
+	min-height: 100vh;
+	font-size: 15px !important;
+	font-weight: 400 !important;
+	line-height: 1.5 !important;
+	background-color: var(--body-bg) !important;
+	color: var(--color-base-gamma) !important;
+}
+#app {
+	min-height: inherit;
+}
+
+.hero-image {
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	margin-right: 8px;
+}
+
+@import './bootstrap_reload';
