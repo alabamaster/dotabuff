@@ -57,7 +57,7 @@ export default {
 					fetch(`https://api.opendota.com/api/matches/${match.match_id}`)
 						.then(r => r.json())
 						.then(matchData => {
-							match.win = matchData.players.filter(p => p.account_id === acc)[0].win
+							match.win = matchData.players.filter(p => p.account_id === acc)[0]?.win ?? null
 						})
 						.then(() => {
 							if (data.error) throw new Error('Bad account id or steam id');
@@ -70,6 +70,7 @@ export default {
 								this.$refs.handlerBtn.disabled = false
 							}, 5000)
 						})
+						.catch(err => console.warn(err))
 				})
 			} catch (error) {
 				this.$store.commit('pushError', {type: 'danger', message: error.message})
